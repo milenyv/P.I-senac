@@ -13,11 +13,13 @@
 
     <h1>Aqui você tem o controle das suas horas!!</h1>
     <div>
-        <form> 
-            <P>CPF:</P>
-            <P>Senha:</P>
-            <a href="ponto.html"><button>Entrar</button></a>
-        </form>
+        <form autocomplete="off">
+            <label for="number">CPF:</label>
+            <input type="number" id="number" name="number" required placeholder="xxx.xxx.xxx.xx" maxlength="11">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+          </form>
+          <a href="ponto.html"><button type="submit">enviar</button></a>
     </div>
     
 </body>
